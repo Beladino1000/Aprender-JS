@@ -3,7 +3,7 @@ const mensagemParagrafo = document.getElementById("mensagem");
 const meuBotao = document.getElementById("meuBotao");
 
 // Adicionando um ouvinte de evento ao botão
-meuBotao.addEventListener("click", function() {
+function trocar() {
     // Alterando o texto do parágrafo
     mensagemParagrafo.textContent = "Olá, Mundo! O JavaScript está funcionando!";
 
