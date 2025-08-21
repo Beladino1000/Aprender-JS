@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendendo a Trindade</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+    body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
 </head>
 <body>
     <h1>Bem-vindo à nossa página de aprendizado de JS!</h1>
     <p id="mensagem">Clique no botão para ver a mágica acontecer.</p>
     <button id="meuBotao" onclick="trocar()">Clique em mim!</button>
 
-    <script src="/scripts/script.js"></script>
+    <script>
+        const mensagemParagrafo = document.getElementById("mensagem");
+        const meuBotao = document.getElementById("meuBotao");
+        function trocar() {
+            mensagemParagrafo.textContent = "Olá, Mundo! O JavaScript está funcionando!";
+            mensagemParagrafo.style.color = "red";
+            mensagemParagrafo.style.fontWeight = "bold";
+        };
+    </script>
 </body>
 </html>
