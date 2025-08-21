@@ -8,6 +8,6 @@ function trocar() {
     mensagemParagrafo.textContent = "Olá, Mundo! O JavaScript está funcionando!";
 
     // Alterando o estilo do parágrafo
-    mensagemParagrafo.style.color = "blue";
+    mensagemParagrafo.style.color = "red";
     mensagemParagrafo.style.fontWeight = "bold";
 };
