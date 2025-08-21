@@ -1,15 +1,13 @@
-// Exemplo básico de variáveis e tipos de dados
+// Selecionando elementos do DOM
+const mensagemParagrafo = document.getElementById("mensagem");
+const meuBotao = document.getElementById("meuBotao");
 
-// Declarando variáveis
-let nome = "João"; // String
-let idade = 25; // Número
-let estaAprovado = true; // Booleano
-let habilidades = ["HTML", "CSS", "JavaScript"]; // Array
-let endereco = { rua: "Rua A", numero: 123 }; // Objeto
+// Adicionando um ouvinte de evento ao botão
+meuBotao.addEventListener("click", function() {
+    // Alterando o texto do parágrafo
+    mensagemParagrafo.textContent = "Olá, Mundo! O JavaScript está funcionando!";
 
-// Exibindo valores no console
-console.log("Nome:", nome);
-console.log("Idade:", idade);
-console.log("Está aprovado:", estaAprovado);
-console.log("Habilidades:", habilidades);
-console.log("Endereço:", endereco);
+    // Alterando o estilo do parágrafo
+    mensagemParagrafo.style.color = "blue";
+    mensagemParagrafo.style.fontWeight = "bold";
+});
