@@ -10,4 +10,4 @@ function trocar() {
     // Alterando o estilo do parágrafo
     mensagemParagrafo.style.color = "blue";
     mensagemParagrafo.style.fontWeight = "bold";
-});
+};
